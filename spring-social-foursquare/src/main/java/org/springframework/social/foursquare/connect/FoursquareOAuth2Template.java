@@ -18,6 +18,7 @@ public class FoursquareOAuth2Template extends OAuth2Template {
 
     public FoursquareOAuth2Template(String clientId, String clientSecret) {
         super(clientId, clientSecret, "https://foursquare.com/oauth2/authenticate", "https://foursquare.com/oauth2/access_token");
+        setUseParametersForClientAuthentication(true);
     }
     
     @Override
